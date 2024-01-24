@@ -1,14 +1,14 @@
 /* Nav Icon */
-.mobile-nav-btn {
+.mobile-nav-btn {	
 	--time: 0.1s;
 
-	--width: 40px;
-	--height: 30px;
+	--width: 36px;
+	--height: 32px;
 
 	--line-height: 4px;
-	--spacing: 6px;
+	--spacing: 12px;
 
-	--color: #000;
+	--color: var(--Gray-4);
 	--radius: 4px;
 
 	/* Fixed height and width */
@@ -26,10 +26,11 @@
 	z-index: 999;
 }
 
-.nav-icon {
+.nav-icon {	
 	position: relative;
-	width: var(--width);
-	height: var(--line-height);
+	width: 26px;
+	height: 4.5px;
+	// height: var(--line-height);
 	background-color: var(--color);
 	border-radius: var(--radius);
 }
