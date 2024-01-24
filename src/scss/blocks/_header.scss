@@ -1,0 +1,13 @@
+.header {
+  background-color: rgb(151, 81, 81);
+  padding: 100px 0;
+  font-size: 48px;
+  text-align: center;
+  position: relative;
+}
+
+@media screen and (max-width: 1200px) {
+  .header h1 {
+    font-size: 26px;
+  }
+}
