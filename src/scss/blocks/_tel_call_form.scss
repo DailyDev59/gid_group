@@ -1,0 +1,92 @@
+.popup_bg {
+  position: fixed;
+  max-width: 1920px;
+  width: 100%;
+  height: 1080px;
+  margin-top: -130px;  
+  background: linear-gradient(164deg, rgba(0, 0, 0, 0.40) -9.9%, rgba(0, 0, 0, 0.29) 113.34%);
+  opacity: 1;
+  pointer-events: all; 
+  transition: 0.5s all; 
+
+  &.hidden {
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s all;
+  }
+}
+
+.popup {
+  position: absolute;
+  padding: 109px 0 136px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 1081px;
+  max-height: 655px;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  //   text-align: center;
+  align-items: center;
+
+  & h3 {
+    color: var(--black);
+    text-align: center;
+    font-family: var(--font-main);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 46px;
+  }
+
+  & .label_text {
+    padding: 26px 0 26px 37px;
+    text-align: left;
+    color: var(--Gray-2);
+    font-family: var(--font-main);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: 2px solid var(--black);
+    background: rgba(130, 130, 130, 0);
+  }
+
+  & input[placeholder='Ваше имя'] {
+    margin-bottom: 20px;
+  }
+
+  & input[placeholder='Номер телефона'] {
+    margin-bottom: 37px;
+  }
+
+  & img[alt='Tel Cross'] {
+    position: absolute;
+    top: 29px;
+    right: 56px;
+    cursor: pointer;
+  }
+
+  & #call_me {
+    padding: 36px 179px;
+    background-color: var(--yellow);
+    color: var(--black);
+    text-align: center;
+    font-family: var(--font-main);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  & .label_text,
+  & button[type='submit'] {
+    max-width: 619px;
+    width: 100%;
+  }
+}

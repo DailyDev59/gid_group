@@ -1,5 +1,5 @@
 import mobileNav from './modules/mobile-nav.js';
 mobileNav();
 
-const popupBg = document.querySelector('.popup_bg');
-const popup = document.querySelector('.popup');
+import telCallForm from './modules/tel_call.js';
+telCallForm();

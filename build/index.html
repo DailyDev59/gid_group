@@ -15,10 +15,10 @@
       </button>
   </div>
   <img class="header_grid" src="./../../img/svg/logo.svg" alt="Logo" />
-  <a href=""><img class="header_grid" src="./../../img/svg/telephone.svg" alt="Telephone" /></a>
+  <button><img class="header_grid" id="tel_call" src="./../../img/svg/telephone.svg" alt="Telephone" /></button>
 </header>
 <div class="mobile-nav">
-  <a href=""><img class="header_grid" src="./../../img/svg/telephone.svg" alt="Telephone" /></a>
+  <!-- <a href=""><img class="header_grid" src="./../../img/svg/telephone.svg" alt="Telephone" /></a> -->
   <div class="mobile-nav__list">
     <a href="#!"><img src="./../../img/svg/logo.svg" alt="Logo" /></a>
     <a href="#!" class="active">Главная</a>
@@ -51,21 +51,21 @@
   </div>
 </div>
 
-      <div class="popup_bg">
-        <form class="popup">
-          <img src="./../../img/svg/tel_form_cross.svg" alt="Tel Cross">
-          <h3>Обратный звонок</h3>
-            <input type="text" class="label_text" placeholder="Ваше имя">
-            <input type="text" class="label_text" placeholder="Номер телефона">
-          <button type="submit">
-            Позвонить мне
-          </button>
-        </form>
-      </div>
+<div class="popup_bg hidden">
+    <form class="popup">
+      <button type= button id="call"><img src="./../../img/svg/tel_form_cross.svg"  alt="Tel Cross"></button>
+      <h3>Обратный звонок</h3>
+        <input type="text" class="label_text" placeholder="Ваше имя">
+        <input type="text" class="label_text" placeholder="Номер телефона">
+      <button type="button" id="call_me">
+        Позвонить мне
+      </button>
+    </form>
+  </div>            
     </div>
     <footer class="footer">
     <h1>Footer</h1>
 </footer>    
-    <script src="./js/index.bundle.js"></script>
+    <script src="./js/index.bundle.js"></script>    
   </body>
 </html>
