@@ -10,18 +10,20 @@
     rgba(0, 0, 0, 0) 128px
   );
   position: fixed;
+  // position: relative;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 30px;
 
   & .header_grid-1 {
+    position: relative;
     grid-column-start: 1;
     grid-column-end: 2;
     padding-left: 103px;
     align-self: center;    
 
     button {
-      margin-top: -23px;
+      margin-top: -23px;      
     }    
   }
 
@@ -29,8 +31,10 @@
     grid-column-start: 2;
     grid-column-end: 3;
     justify-self: center;
-    align-self: end;
+    align-self: end;       
   }
+
+ 
   
 
   & .header_grid-3 {
