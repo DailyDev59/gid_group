@@ -7,9 +7,18 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>  
-    <div class="intro">
-      @@include('./blocks/header.html')           
-    </div>
+    <section class="intro">
+      @@include('./blocks/header.html')
+      <div class="intro_wrapper">
+        <div class="intro_item-1">Лучшее для лучших</div>
+        <a href="#!">
+          <div class="intro_item-2">Проекты</div>
+        </a>
+        <a href="#!">
+          <div class="intro_item-3">Расчитать стоимость</div>
+        </a>
+      </div>          
+    </section>    
     @@include('./blocks/footer.html')    
     <script src="./js/index.bundle.js"></script>    
   </body>
