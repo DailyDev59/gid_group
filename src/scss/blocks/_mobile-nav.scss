@@ -11,7 +11,7 @@
   padding-top: 200px;
   padding-bottom: 75px;
   background: rgba(19, 19, 19, 0.9);
-  transition: all 0.4s ease-in;   
+  transition: all 0.4s ease-in;    
 }
 
 .mobile-nav--open {
@@ -22,7 +22,7 @@
   color: var(--Gray-3, #828282);
   text-align: center;
   font-family: var(--font-main);
-  font-size: 48px;
+  font-size: 4.8rem;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -47,7 +47,7 @@
     color: var(--Gray-6, #f2f2f2);
     text-align: center;
     font-family: var(--font-main);
-    font-size: 48px;
+    font-size: 2.4rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -62,4 +62,17 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 560px) {
+  .nets {
+    max-width: 200px;
+    display: grid;
+    grid-template-columns: 42px 42px 42px;
+    grid-template-rows: 42px 42px;
+    row-gap: 42px;
+  }
+  .mobile-nav a {
+    font-size: 2.4rem;
+  }
 }

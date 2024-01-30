@@ -1,20 +1,22 @@
 const config = {
-    mode: 'production',
-    entry: {
-      index: './src/js/index.js',      
+  mode: 'production',
+  entry: {
+    index: './src/js/index.js',
+    design: './src/js/design.js',
+    design: './src/js/repair.js',
     //   contacts: './src/js/contacts.js',
-    },
-    output: {
-      filename: '[name].bundle.js',
-    },
-    module: {
-      rules: [
-        {
-          test: /\.css$/,
-          use: ['style-loader', 'css-loader'],
-        },
-      ],
-    },
+  },
+  output: {
+    filename: '[name].bundle.js',
+  },
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      },
+    ],
+  },
 };
-  
+
 module.exports = config;

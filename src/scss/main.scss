@@ -34,13 +34,14 @@
   color: var(--Gray-6);
   text-align: center;
   font-family: var(--font-main);
-  font-size: 80px;
+  font-size: 8rem;
   font-style: normal;
   font-weight: 300;
   line-height: normal;   
 }
 
 .intro_item-2, .intro_item-3 {
+  display: flex;
   max-width: 348px;
   width: 100%;
   max-height: 77px;
@@ -48,16 +49,383 @@
   color: var(--white);
   text-align: center;
   font-family: var(--font-main);
-  font-size: 24px;
+  font-size: 2.4rem;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
   border: 1px solid #C4C4C4;
   background: rgba(17, 17, 17, 0.60);
-  padding: 25px 0; 
+  align-items: center;
+  justify-content: center;
   
    &:hover {
     background: rgba(17, 17, 17, 0.90);
     transition: transform 0.5s ease-in;  
   }
 }
+
+.achieve {
+  display: flex;
+  flex-wrap: wrap; 
+  // justify-content: space-between;
+  margin: 45px 40px 92px;
+  padding: 37px 91px 40px 108px;
+  gap: 65px;
+  background: var(--Gray-6);
+
+  & .achieve_item h2 {    
+    color: #0E0E0E;    
+    font-family: var(--font-main);
+    font-size: 6.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 7px; 
+  }
+
+  & .achieve_item h5 {
+    display: flex;
+    align-items: flex-start;
+    color: #0E0E0E;
+    font-family: var(--font-main);
+    font-size: 2.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 16px;
+    margin-left: 6px;
+    gap: 6px;
+  }
+
+  & .achieve_item p {
+    max-width: 356px;
+    width: 100%;
+    color: #0E0E0E;
+    font-family: var(--font-main);
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-left: 30px; 
+  }
+
+  & .achieve_item #last {
+    max-width: 245px;
+  }
+}
+
+.cost {  
+  display: grid;
+  grid-template-columns: 200px 865px 635px 225px;
+  grid-template-rows: 84px 396px 379px;
+  grid-row-gap: 45px;
+  margin-bottom: 85px;
+
+  & h2 {
+    grid-column-start: 1;
+    grid-column-end: 5;    
+    color: var(--black);
+    font-family: var(--font-main);
+    font-size: 4.8rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-left: 61px;
+
+    &::after {      
+        display: block;
+        content: "";
+        width: 200px;
+        height: 10px;
+        background-color: var(--black);
+        margin-top: 18px;
+        margin-left: -60px;        
+    }
+  }
+
+  & .test_query {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  & .test_query h3 {
+    color: var(--black);
+    font-family: var(--font-main);
+    font-size: 4.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 48px; 
+  }
+
+  & .test_query p {
+    color: var(--Gray-1);
+    font-family: var(--font-main);
+    font-size: 3.6rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 147.187%; /* 52.987px */ 
+  }
+
+  & .polygon {
+    position: relative;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+     
+    & img[alt="Polygon"] {
+      position: absolute;
+      bottom: 0;      
+    }
+
+    & img[alt="Polygon-1"] {
+      position: absolute;
+      left: 375px;
+    }
+  }
+
+  & button {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    color: var(--white);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 3.6rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    background-color: var(--black);
+    max-width: 510px;
+    width: 100%;
+    max-height: 112px;
+    height: 100%;
+    margin-top: 36px;
+  }
+
+  & .bonuses {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    padding-left: 78px;
+
+    & h5 {
+      color: var(--black);
+      font-family: var(--font-main);
+      font-size: 3.6rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 147.187%; /* 52.987px */
+      margin-bottom: 19px; 
+    }
+
+    & p {
+      display: flex;
+      align-items: first baseline;
+      color: var(--Gray-1);
+      font-family: var(--font-main);
+      font-size: 3.6rem;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 147.187%; /* 52.987px */ 
+      margin-bottom: 27px;
+      gap: 12px;
+    }
+  }
+}
+
+.large_gap {
+  grid-row-gap: 56px;
+}
+
+.service {
+  display: grid;
+  grid-template-rows: 84px 833px;
+  grid-template-columns: 86px repeat(4, 1fr) 86px;
+  grid-row-gap: 56px;
+  margin-bottom: 49px;
+
+  & h2 {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-column: span 6;
+    color: var(--black);
+    font-family: var(--font-main);
+    font-size: 4.8rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-left: 61px; 
+    
+    &::after {      
+      display: block;
+      content: "";
+      width: 200px;
+      height: 10px;
+      background-color: var(--black);
+      margin-top: 18px;
+      margin-left: -60px;        
+  }
+  }
+
+  & .service_item-1 {
+    grid-column-start: 2;
+  }
+
+  & .service_item-1, & .service_item-2, & .service_item-3, & .service_item-4 {
+    & img[alt="Mark"] {
+      margin-top: 42px;
+      margin-bottom: 7px;
+    }
+    & h4 {
+      color: #0E0E0E;
+      font-family: var(--font-main);
+      font-size: 4.8rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal; 
+      margin-bottom: 23px;
+    }
+    & p {
+      max-width: 294px;
+      width: 100%;
+      color: var(--Gray-2);
+      font-family: var(--font-main);
+      font-size: 1.8rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 147.187%; /* 26.494px */ 
+    }
+  }
+}
+
+.our_projects {
+  display: grid;
+  grid-template-columns: 84px repeat(3, 1fr) 108px;
+  grid-template-rows: 102px 831px 831px 66px;
+  margin-bottom: 52px;
+
+  & h2 {
+    grid-column-start: 1;
+    grid-column-end: 6;    
+    color: var(--black);
+    font-family: var(--font-main);
+    font-size: 4.8rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-left: 61px; 
+    
+    &::after {      
+      display: block;
+      content: "";
+      width: 200px;
+      height: 10px;
+      background-color: var(--black);
+      margin-top: 18px;
+      margin-left: -60px;        
+  }
+  }
+  & img[alt="Proj_6"] {
+    max-height: 657px;
+    // height: 100%;
+  }
+  & .our_projects_item-1 {
+    grid-column-start: 2;        
+  }
+  & .our_projects_item-4 {
+    grid-column-start: 2;    
+  }  
+  & h5 {
+    color: var(--black);
+    font-family: var(--font-main);
+    font-size: 2.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 13px;
+    margin-top: 18px;
+  }
+  & h6 {
+    color: var(--Gray-3);
+    font-family: var(--font-main);
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal; 
+    margin-bottom: 13px;
+  }
+  & p {
+    color: var(--Gray-1);
+    font-family: var(--font-main);
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+  & button {
+    justify-self: center;
+    grid-column-start: 3;    
+    max-width: 273px;
+    width: 100%;
+    max-height: 66px;
+    height: 100%;
+    border: 1px solid var(--black);
+    background: var(--black); 
+    color: var(--Gray-6);
+    text-align: center;
+    font-family: var(--font-main);
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+
+    & span {
+      margin-left: 11px;
+    }   
+  }
+}
+
+
+
+// Media queries
+
+@media screen and (max-width: 834px) {
+  .intro_wrapper {
+    column-gap: 27px;
+    row-gap: 140px;
+    max-width: 575px;
+    max-height: 370px;
+  }
+  .intro_item-1 {    
+    font-size: 4.8rem;
+  }
+  .intro_item-2, .intro_item-3 {
+    max-width: 274px;
+    width: 100%;
+    max-height: 61px;
+    height: 100%;
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .intro_wrapper {     
+    display: block;
+  }
+
+  .intro_item-1 {
+    margin-bottom: 199px;
+  }
+
+  .intro_item-2, .intro_item-3 {
+    max-width: 274px;
+    width: 100%;
+    max-height: 61px;
+    height: 100%;
+    margin: 0 auto 26px;
+    
+}}
