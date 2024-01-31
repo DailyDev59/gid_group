@@ -1,35 +1,18 @@
 :root {
-	// --container-width: 1200px;
-	// --container-padding: 15px;
-
-	--font-main: 'Roboto', sans-serif;
-	// --font-accent: 'Playfair Display', serif;
-	// --font-desktop-size: 1rem;
-	// --font-tablet-size: 0.75rem;
-	// --font-mobile-size: 0.75rem;
-
-
-	--page-bg: #ffffff;
-	--white: #fff;
-	--black: #000;
-	--yellow: #FAFF09;
-	--red: #EB5757;
-	--blush-red: #E7D0D0;
-	--Gray-1: #333;
-	--Gray-2: #4f4f4f;
-	--Gray-3: #828282;
-	--Gray-4: #BDBDBD;
-	--Gray-5: #e0e0e0;
-	--Gray-6: #f2f2f2;
-	// --text-color: #000;
-	// --accent: #ac182c;
-	--desktop-size: 1920px;
-    // --laptop-size: 1199px;
-	--tablet-size: 834px;
-	--mobile-size: 375px;
+  --font-main: 'Roboto', sans-serif;
+  --page-bg: #ffffff;
+  --white: #fff;
+  --black: #000;
+  --yellow: #faff09;
+  --red: #eb5757;
+  --blush-red: #e7d0d0;
+  --Gray-1: #333;
+  --Gray-2: #4f4f4f;
+  --Gray-3: #828282;
+  --Gray-4: #bdbdbd;
+  --Gray-5: #e0e0e0;
+  --Gray-6: #f2f2f2;
+  --desktop-size: 1920px;
+  --tablet-size: 834px;
+  --mobile-size: 375px;
 }
-
-// .dark {
-//     --page-bg: #252526;
-//     --text-color: #fff;
-// }

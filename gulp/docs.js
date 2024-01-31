@@ -52,8 +52,8 @@ gulp.task('html:docs', function () {
     .pipe(changed('./docs/'))
     .pipe(plumber(plumberNotify('HTML')))
     .pipe(fileInclude(fileIncludeSettings))
-    .pipe(webpHTML())
     .pipe(htmlclean())
+    .pipe(webpHTML())
     .pipe(gulp.dest('./docs/'));
 });
 
@@ -65,9 +65,9 @@ gulp.task('sass:docs', function () {
     .pipe(sourceMaps.init())
     .pipe(autoprefixer())
     .pipe(sassGlob())
-    .pipe(webpCss())
     .pipe(sass())
     .pipe(csso())
+    .pipe(webpCss())
     .pipe(sourceMaps.write())    
     .pipe(gulp.dest('./docs/css/'));
 });
