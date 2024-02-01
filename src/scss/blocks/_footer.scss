@@ -1,14 +1,23 @@
 .footer {
-  background-color: rgb(99, 57, 225);
-  padding: 100px 0;
-  font-size: 48px;
-  color: #fff;
-  text-align: center;
-  height: 3000px;
-}
+  height: 1075px;  
+  position: relative;
+  margin-top: 81px;
 
-@media screen and (max-width: 1200px) {
-  .footer h1 {
-    font-size: 26px;
+  & .polygon_large {
+    position: absolute;
+    height: 1075px;    
+    max-width: 1432px;
+    width: 100%;   
+  
+  & img[alt="Polygon_large"] {
+    position: absolute;
+    bottom: 0;
+    left: 0;    
   }
+  & img[alt="Polygon_large-1"] {
+    position: absolute;
+    top: 0;
+    right: 349px;
+  }
+}
 }

@@ -1,6 +1,7 @@
 html {
 	scroll-behavior: smooth;
-	font-size: 62.5%;	
+	font-size: 62.5%;
+	background-color: #f3eedc;	
 }
 
 body {
@@ -10,5 +11,7 @@ body {
 	background-color: var(--page-bg);
 	color: var(--black);
     font-family: var(--font-main);
-	font-size: 16px;	
+	font-size: 16px;
+	font-style: normal;	
+	line-height: normal;
 }

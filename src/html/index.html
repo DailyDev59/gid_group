@@ -81,7 +81,7 @@
           </div>
         </div>
       </section>
-      <hr class="partition">
+      @@include('./blocks/partition.html')
       <section class="service none">
         <h2>ОСНОВНЫЕ УСЛУГИ</h2>
         <div class="service_item-1">
@@ -121,7 +121,7 @@
           </p>
         </div>
       </section>
-      <hr class="partition">
+      @@include('./blocks/partition.html')
       <section class="our_projects none">
         <h2>НАШИ ПРОЕКТЫ</h2>
         <div class="our_projects_item-1">
@@ -165,7 +165,7 @@
           <span>Еще проекты</span>
         </button>
       </section>
-      <hr class="partition">
+      @@include('./blocks/partition.html')
       <section class="stages none">
         <h2>6 ЭТАПОВ ОТ ЗАЯВКИ ДО<br> СДАЧИ ГОТОВОГО ОБЪЕКТА</h2>
         <div class="stages_item-1">
@@ -259,19 +259,9 @@
         </div>
         <button type="button">Начать <img src="./../img/svg/arrow_rigth.svg" alt="Arrow_right"></button>        
       </section>
-      <hr class="partition" id="gall">
-      <gallery class="gallery">
-        <div class="there">
-          <img src="./../img/jpg/sofa_bed.jpg" alt="Sofa_bed">
-          <div class="there_text">
-            <h2>МЫ ТАМ, ГДЕ:</h2>
-            <p><img src="./../img/svg/mark_white.svg" alt="Mark_white"><span>Требуется высокое качество ремонтных работ</span>
-            </p>
-            <p><img src="./../img/svg/mark_white.svg" alt="Mark_white"><span>Нужно четко соблюсти бюджет</span>
-            </p>
-            <p><img src="./../img/svg/mark_white.svg" alt="Mark_white"><span>Необходимо ответственно подойти к процессу</span></p>
-          </div>
-        </div>
+      @@include('./blocks/partition.html')
+      <gallery class="gallery none">
+        @@include('./blocks/there.html')
         <div class="flats">  
             <h3><img src="./../img/svg/instagram.svg" alt="Instagram"></h3>
             <div class="flat_item-1">
@@ -301,7 +291,23 @@
           
         </div>
       </gallery>
-      <hr class="partition">
+      @@include('./blocks/partition.html')
+      <section class="catalogue none">
+        <h2>ПОЛУЧИТЕ КАТАЛОГ<br> НАШИХ ПРОЕКТОВ</h2>
+        <div class="catalogue_pic">
+          <img src="./../img/jpg/catalogue.jpg" alt="Catalogue">
+        </div>
+        <div class="catalogue_contacts">
+          <h3>Оставьте ваш E-mail, чтобы получить каталог наших проектов</h3>
+          <p>Каталог поможет вам выбрать стиль и продумать планировку квартиры</p>
+          <input type="text" class="e-mail" placeholder="Введите ваш E-mail" />
+          <div class="pers_data_agr">
+            <input type="checkbox" />
+            Я даю <a href="№">согласие на обработку персональных данных.</a>
+          </div>
+          <button type="button">Получить каталог</button>
+        </div>
+      </section>
     </main>
     @@include('./blocks/footer.html')
     <script src="./js/index.bundle.js"></script>
