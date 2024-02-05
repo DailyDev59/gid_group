@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <section class="intro">
+    <section class="intro none">
       @@include('./blocks/header.html')
       <div class="intro_wrapper">
         <div class="intro_item-1">Лучшее для лучших</div>
@@ -19,37 +19,39 @@
         </a>
       </div>
     </section>
-    <aside class="achieve">
-      <div class="achieve_item">
-        <h2>100+</h2>
-        <h5>
-          <img src="./../img/svg/mark.svg" alt="Mark" />Реализованные проекты
-        </h5>
-        <p>Работаем с любой недвижимостью – от дворцов до квартир</p>
-      </div>
-      <div class="achieve_item">
-        <h2>10 лет</h2>
-        <h5>
-          <img src="./../img/svg/mark.svg" alt="Mark" />Безупречная репутация
-        </h5>
-        <p>
-          Наши специалисты постоянно стажируются у лидеров строительных работ
-        </p>
-      </div>
-      <div class="achieve_item">
-        <h2>3 года</h2>
-        <h5>
-          <img src="./../img/svg/mark.svg" alt="Mark" />Гарантии на все работы
-        </h5>
-        <p>
-          Мы внимательно изучаем рынок отделочных материалов и инновационной
-          техники
-        </p>
-      </div>
-      <div class="achieve_item">
-        <h2>Сроки</h2>
-        <h5><img src="./../img/svg/mark.svg" alt="Mark" />Процесс</h5>
-        <p id="last">Нужно лучшее – закажи это у лучших!</p>
+    <aside class="achieve_cont none">
+      <div class="achieve">
+        <div class="achieve_item-1">
+          <h2>100+</h2>
+          <h5>
+            <img src="./../img/svg/mark.svg" alt="Mark" />Реализованные проекты
+          </h5>
+          <p>Работаем с любой недвижимостью – от дворцов до квартир</p>
+        </div>
+        <div class="achieve_item-2">
+          <h2>10 лет</h2>
+          <h5>
+            <img src="./../img/svg/mark.svg" alt="Mark" />Безупречная репутация
+          </h5>
+          <p>
+            Наши специалисты постоянно стажируются у лидеров строительных работ
+          </p>
+        </div>
+        <div class="achieve_item-3">
+          <h2>3 года</h2>
+          <h5>
+            <img src="./../img/svg/mark.svg" alt="Mark" />Гарантии на все работы
+          </h5>
+          <p>
+            Мы внимательно изучаем рынок отделочных материалов и инновационной
+            техники
+          </p>
+        </div>
+        <div class="achieve_item-4">
+          <h2>Сроки</h2>
+          <h5><img src="./../img/svg/mark.svg" alt="Mark" />Процесс</h5>
+          <p>Нужно лучшее – закажи это у лучших!</p>
+        </div>
       </div>
     </aside>
     <main>
@@ -63,7 +65,7 @@
           </p>
         </div>
         <div class="polygon">
-          <img src="./../img/svg/polygon-1.svg" alt="Polygon-1" />
+          <!-- <img src="./../img/svg/polygon-1.svg" alt="Polygon-1" /> -->
           <img src="./../img/svg/polygon.svg" alt="Polygon" />
         </div>
         <button type="button">Узнать стоимость</button>
@@ -167,139 +169,158 @@
       </section>
       @@include('./blocks/partition.html')
       <section class="stages">
-        <h2>6 ЭТАПОВ ОТ ЗАЯВКИ ДО<br> СДАЧИ ГОТОВОГО ОБЪЕКТА</h2>
+        <h2>
+          6 ЭТАПОВ ОТ ЗАЯВКИ ДО<br />
+          СДАЧИ ГОТОВОГО ОБЪЕКТА
+        </h2>
         <div class="stages_item-1">
-          <img src="./../img/svg/envelope.svg" alt="Envelope">
+          <img src="./../img/svg/envelope.svg" alt="Envelope" />
           <div class="data">
             <h5>01</h5>
             <h6>Заявка</h6>
           </div>
-          <p>Оставляйте заявку на сайте и получите 2 варианта планировки квартиры БЕСПЛАТНО</p>
+          <p>
+            Оставляйте заявку на сайте и получите 2 варианта планировки квартиры
+            БЕСПЛАТНО
+          </p>
           <a href="#">
             <div class="check_text">
-              <img src="./../img/svg/check.svg" alt="Check">
+              <img src="./../img/svg/check.svg" alt="Check" />
               <p>Оставить заявку</p>
             </div>
           </a>
-          <img src="./../img/svg/dashed_line.svg" alt="Dashed_line">
+          <img src="./../img/svg/dashed_line.svg" alt="Dashed_line" />
         </div>
         <div class="stages_item-2">
-          <img src="./../img/svg/triangle.svg" alt="Triangle">
+          <img src="./../img/svg/triangle.svg" alt="Triangle" />
           <div class="data">
             <h5>02</h5>
             <h6>Дизайн</h6>
           </div>
-          <p>Собираете на сайте стиль
-            из четырех готовых решений
-            с возможностью редактирования</p>
+          <p>
+            Собираете на сайте стиль из четырех готовых решений с возможностью
+            редактирования
+          </p>
           <a href="#">
             <div class="check_text">
-              <img src="./../img/svg/check.svg" alt="Check">
+              <img src="./../img/svg/check.svg" alt="Check" />
               <p>Выбрать дизайн</p>
             </div>
           </a>
-          <img src="./../img/svg/dashed_line.svg" alt="Dashed_line">
+          <img src="./../img/svg/dashed_line.svg" alt="Dashed_line" />
         </div>
         <div class="stages_item-3">
-          <img src="./../img/svg/calculator.svg" alt="Calculator">
+          <img src="./../img/svg/calculator.svg" alt="Calculator" />
           <div class="data">
             <h5>03</h5>
             <h6>Расчет</h6>
           </div>
-          <p>Расчитываете финальную стоимость ремонта с помощью 
-            онлайн-калькулятора</p>
+          <p>
+            Расчитываете финальную стоимость ремонта с помощью
+            онлайн-калькулятора
+          </p>
           <a href="#">
             <div class="check_text">
-              <img src="./../img/svg/check.svg" alt="Check">
+              <img src="./../img/svg/check.svg" alt="Check" />
               <p>Посчитать</p>
             </div>
           </a>
-          <img src="./../img/svg/dashed_line.svg" alt="Dashed_line">
+          <img src="./../img/svg/dashed_line.svg" alt="Dashed_line" />
         </div>
         <div class="stages_item-4">
-          <img src="./../img/svg/notebook.svg" alt="Notebook">
+          <img src="./../img/svg/notebook.svg" alt="Notebook" />
           <div class="data">
             <h5>04</h5>
             <h6>Договор</h6>
           </div>
-          <p>Собираете на сайте стиль
-            из четырех готовых решений
-            с возможностью редактирования</p>
+          <p>
+            Собираете на сайте стиль из четырех готовых решений с возможностью
+            редактирования
+          </p>
           <a href="#">
             <div class="check_text">
-              <img src="./../img/svg/check.svg" alt="Check">
+              <img src="./../img/svg/check.svg" alt="Check" />
               <p>Оставить заявку</p>
             </div>
           </a>
         </div>
         <div class="stages_item-5">
-          <img src="./../img/svg/paint_roller.svg" alt="Paint_roller">          
-            <div class="data">
-              <h5>05</h5>
-              <h6>Ремонт</h6>
-            </div>          
-          <p>Собираете на сайте стиль
-            из четырех готовых решений
-            с возможностью редактирования</p>
+          <img src="./../img/svg/paint_roller.svg" alt="Paint_roller" />
+          <div class="data">
+            <h5>05</h5>
+            <h6>Ремонт</h6>
+          </div>
+          <p>
+            Собираете на сайте стиль из четырех готовых решений с возможностью
+            редактирования
+          </p>
           <a href="">
             <div class="check_text">
-              <img src="./../img/svg/check.svg" alt="Check">
+              <img src="./../img/svg/check.svg" alt="Check" />
               <p>Оставить заявку</p>
             </div>
           </a>
         </div>
         <div class="stages_item-6">
-          <img src="./../img/svg/house.svg" alt="House">
+          <img src="./../img/svg/house.svg" alt="House" />
           <div class="data">
             <h5>06</h5>
             <h6>Сдача объекта</h6>
           </div>
-          <p>Расчитываете финальную стоимость ремонта с помощью 
-            онлайн-калькулятора</p>          
+          <p>
+            Расчитываете финальную стоимость ремонта с помощью
+            онлайн-калькулятора
+          </p>
         </div>
-        <button type="button">Начать <img src="./../img/svg/arrow_rigth.svg" alt="Arrow_right"></button>        
+        <button type="button">
+          Начать <img src="./../img/svg/arrow_rigth.svg" alt="Arrow_right" />
+        </button>
       </section>
       @@include('./blocks/partition.html')
       <gallery class="gallery">
         @@include('./blocks/there.html')
-        <div class="flats">  
-            <h3><img src="./../img/svg/instagram.svg" alt="Instagram"></h3>
-            <div class="flat_item-1">
-              <img src="./../img/jpg/flat-1.jpg" alt="Flat-1">
-            </div>
-            <div class="flat_item-2">
-              <img src="./../img/jpg/flat-2.jpg" alt="Flat-2">
-            </div>
-            <div class="flat_item-3">
-              <img src="./../img/jpg/flat-3.jpg" alt="Flat-3">
-            </div>
-            <div class="flat_item-4">
-              <img src="./../img/jpg/flat-4.jpg" alt="Flat-4">
-            </div>
-            <div class="flat_item-5">
-              <img src="./../img/jpg/flat-5.jpg" alt="Flat-5">
-            </div>
-            <div class="flat_item-6">
-              <img src="./../img/jpg/flat-6.jpg" alt="Flat-6">
-            </div>
-            <div class="flat_item-7">
-              <img src="./../img/jpg/flat-7.jpg" alt="Flat-7">
-            </div>
-            <div class="flat_item-8">
-              <img src="./../img/jpg/flat-8.jpg" alt="Flat-8">
-            </div>
-          
+        <div class="flats">
+          <h3><img src="./../img/svg/instagram.svg" alt="Instagram" /></h3>
+          <div class="flat_item-1">
+            <img src="./../img/jpg/flat-1.jpg" alt="Flat-1" />
+          </div>
+          <div class="flat_item-2">
+            <img src="./../img/jpg/flat-2.jpg" alt="Flat-2" />
+          </div>
+          <div class="flat_item-3">
+            <img src="./../img/jpg/flat-3.jpg" alt="Flat-3" />
+          </div>
+          <div class="flat_item-4">
+            <img src="./../img/jpg/flat-4.jpg" alt="Flat-4" />
+          </div>
+          <div class="flat_item-5">
+            <img src="./../img/jpg/flat-5.jpg" alt="Flat-5" />
+          </div>
+          <div class="flat_item-6">
+            <img src="./../img/jpg/flat-6.jpg" alt="Flat-6" />
+          </div>
+          <div class="flat_item-7">
+            <img src="./../img/jpg/flat-7.jpg" alt="Flat-7" />
+          </div>
+          <div class="flat_item-8">
+            <img src="./../img/jpg/flat-8.jpg" alt="Flat-8" />
+          </div>
         </div>
       </gallery>
       @@include('./blocks/partition.html')
       <section class="catalogue">
-        <h2>ПОЛУЧИТЕ КАТАЛОГ<br> НАШИХ ПРОЕКТОВ</h2>
+        <h2>
+          ПОЛУЧИТЕ КАТАЛОГ<br />
+          НАШИХ ПРОЕКТОВ
+        </h2>
         <div class="catalogue_pic">
-          <img src="./../img/jpg/catalogue.jpg" alt="Catalogue">
+          <img src="./../img/jpg/catalogue.jpg" alt="Catalogue" />
         </div>
         <div class="catalogue_contacts">
           <h3>Оставьте ваш E-mail, чтобы получить каталог наших проектов</h3>
-          <p>Каталог поможет вам выбрать стиль и продумать планировку квартиры</p>
+          <p>
+            Каталог поможет вам выбрать стиль и продумать планировку квартиры
+          </p>
           <input type="text" class="e-mail" placeholder="Введите ваш E-mail" />
           <div class="pers_data_agr">
             <input type="checkbox" />
